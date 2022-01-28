@@ -4,8 +4,8 @@ In the following, we will focus on structure of the tensor fusion categories.
 
 The structure of a general category theory contains two important concepts: objects and morphisms. The morphisms are the maps between objects.
 
-**[Definition]** A **category** ``C`` consists of
-*   a class ``\mathrm{Ob}(C)`` of objects ``V``, ``W``, …
+**[Definition]** A **category** ``\mathcal{C}`` consists of
+*   a class ``\mathrm{Ob}(C)``, whose elements ``X``, ``Y``, … are called *objects* of ``\mathrm{Ob}(C)``
 *   for each pair of objects ``V`` and ``W``, a set ``\mathrm{Hom}_C(W,V)`` of morphisms
     ``f:W→V``; for a given map ``f``, ``W`` is called the *domain* or *source*, and ``V``
     the *codomain* or *target*.
