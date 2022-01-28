@@ -9,7 +9,12 @@ The structure of a general category theory contains two important concepts: obje
 *   a set ``\mathrm{Hom}_{\mathcal{C}}(X,Y)`` of morphisms ``f:X→Y`` for each pair of objects ``X`` and ``Y``, where ``X`` is called the *domain* of ``f``, and ``Y`` the *codomain*;
 *   a map ``∘: \textrm{Hom}_{\mathcal{C}}(Y,Z) × \textrm{Hom}_{\mathcal{C}}(X,Y) → \textrm{Hom}_{\mathcal{C}}(X,Z)``, called *composition*, for any ``X,Y,Z ∈ \textrm{Ob}(\mathcal{C})``; The image of a pair ``(g,f)`` under this map is denoted ``g ∘ f`` or just ``gf``, where ``f ∈ \textrm{Hom}_{\mathcal{C}}(X,Y)`` and ``g ∈ \textrm{Hom}_{\mathcal{C}}(Y,Z)``.
 *   an identity morphism ``\mathrm{id}_X:X → X`` for each object ``X``.
-    with the requirements that the composition is *associative* and *unitary* in the following sense: ``(h ∘ g) ∘ f=h ∘ (g ∘ f)``and ``f∘\textrm{id}_X=f=\textrm{id}_Y ∘ f`` for all morphisms ``f: X → Y``, ``g: Y → Z``, ``h:Z → T`` with ``X,Y,Z,T ∈ \textrm{Ob}(\mathcal{C})``.  
+
+  It is required that the composition is *associative* and *unitary* in the following sense: ``(h ∘ g) ∘ f=h ∘ (g ∘ f)``and ``f∘\textrm{id}_X=f=\textrm{id}_Y ∘ f`` for all morphisms ``f: X → Y``, ``g: Y → Z``, ``h:Z → T`` with ``X,Y,Z,T ∈ \textrm{Ob}(\mathcal{C})``.
+
+A *simple object* ``X`` of a ``\mathbb{k}``-linear category ``\mathcal{C}`` is an object for which ``\mathrm{End}_{\mathcal{C}}(X)\simeq \mathbb{k}``.
+
+  
 
 
 
