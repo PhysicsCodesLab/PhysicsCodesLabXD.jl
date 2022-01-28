@@ -12,9 +12,13 @@ makedocs(;
         prettyurls=get(ENV, "CI", "false") == "true",
         canonical="https://PhysicsCodesLab.github.io/PhysicsCodesLabXD.jl",
         assets=String[],
+        mathengine = MathJax()
     ),
     pages=[
         "Home" => "index.md",
+        "Manual" => ["Manual/introduction.md"],
+        "Library" => [],
+        "Index" => ["Index/index.md"]
     ],
 )
 
