@@ -4,13 +4,11 @@ In the following, we will focus on structure of the tensor fusion categories.
 
 The structure of a general category theory contains two important concepts: objects and morphisms. The morphisms are the maps between objects.
 
-**[Definition]** A **category** ``\mathcal{C}`` consists of
-*   a class ``\mathrm{Ob}(C)``, whose elements ``X``, ``Y``, … are called *objects* of ``\mathrm{Ob}(C)``
-*   for each pair of objects ``V`` and ``W``, a set ``\mathrm{Hom}_C(W,V)`` of morphisms
-    ``f:W→V``; for a given map ``f``, ``W`` is called the *domain* or *source*, and ``V``
-    the *codomain* or *target*.
-*   composition of morphisms ``f:W→V`` and ``g:X→W`` into ``(f ∘ g):X→V`` that is
-    associative, such that for ``h:Y→X`` we have ``f ∘ (g ∘ h) = (f ∘ g) ∘ h``
+**[Definition]** A **category** ``\mathcal{C}`` consists of:
+*   a class ``\mathrm{Ob}(\mathcal{C})``, whose elements ``X``, ``Y``, … are called *objects* of ``\mathrm{Ob}(\mathcal{C})``
+*   a set ``\mathrm{Hom}_C(X,Y)`` of morphisms ``f:X→Y`` for each pair of objects ``X`` and ``Y``, where ``X`` is called the *domain* of ``f``, and ``Y`` the *codomain*.
+*   a map ``\circ: \textrm{Hom}_{\mathcal{C}}(Y,Z)\times \textrm{Hom}_{\mathcal{C}}(X,Y)\rightarrow\textrm{Hom}_{\mathcal{C}}(X,Z)``
+called *composition*, for any ``X,Y,Z\in \textrm{Ob}(\mathcal{C})``. The image of a pair $(g,f)$ under this map is denoted $g\circ f$ or just $gf$, where $f\in\textrm{Hom}_{\mathcal{C}}(X,Y)$ and $g\in\textrm{Hom}_{\mathcal{C}}(Y,Z)$
 *   for each object ``V``, an identity morphism ``\mathrm{id}_V:V→V`` such that
     ``f ∘ \mathrm{id}_W = f = \mathrm{id}_V ∘ f``.
 
